@@ -1,0 +1,14 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Business_layer extends Model
+{
+  public $timestamps = false;
+    protected $table="business_layer";
+      protected $fillable=['name','workflow_path','remark','department_id','type','lv3_id'] ;
+        protected $guarded=['id',] ;
+
+} 
